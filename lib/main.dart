@@ -14,17 +14,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final DataBase dataBase = DataBase();
-  List data;
-  getData() async {
-    data = await dataBase.getTodos();
-    print(data);
-  }
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
+  
   final TodoBloc bloc = TodoBloc();
 
   @override
