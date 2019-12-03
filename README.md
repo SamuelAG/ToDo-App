@@ -1,16 +1,5 @@
-# todo_app
+# ToDo app
 
-A new Flutter project.
+A simple ToDo app build with Flutter, that interacts with a [Flask Api](https://github.com/SamuelAG/Todo-Backend-App) to access a sqlite database.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/35980368/70013719-4dcf7100-1557-11ea-8e70-126e19ea7919.png" width=280> <img src="https://user-images.githubusercontent.com/35980368/70013586-f4ffd880-1556-11ea-9d64-6aeaca3b4504.png" width=280> <img src="https://user-images.githubusercontent.com/35980368/70013784-7c4d4c00-1557-11ea-82d8-163b729cf48f.png" width=280>
