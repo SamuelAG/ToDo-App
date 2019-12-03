@@ -5,14 +5,14 @@ import 'package:todo_app/Models/todo.dart';
 class DataBase {
   final client = http.Client();
 
-  addTodo() async {
+  addTodo(String title, String desc, String date) async {
     var url = "http://10.0.2.2:5000/todo";
 
     Map<String, dynamic> jsonMap = {
-      "Title": "Titulo da todo",
+      "Title": title,
       "Description":
-          "Aprender flutter e flask e muitas outras coisas lalalalalallalalal",
-      "DueDate": "Date('2019-12-01')"
+          desc,
+      "DueDate": "Date('$date')"
     };
 
     await client
@@ -48,6 +48,7 @@ class DataBase {
     var list = (json.decode(response.body) as List)
         .map((data) => Todo.fromJson(data))
         .toList();
+    //print(response.body);
     return list;
   }
 }
